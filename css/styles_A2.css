@@ -1,0 +1,254 @@
+/* Base styling */
+body {
+    background-color: #f0ece7; /* Light Cream */
+    background-image: url(../images/background.jpg);
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    margin: 0;
+    font-size: 95%;
+    text-align: left;
+}
+
+header {
+    background-color: #325d81; /* Navy Blue */
+    margin: auto;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff; /* White */
+    position: relative; /* Added for logo positioning */
+}
+
+header img {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px; /* Adjust the width as needed */
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Palatino, serif;
+    font-size: 300%;
+    color: #ffffff; /* White */
+    margin: auto;
+    padding: 1% 0%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+nav {
+    margin: auto;
+    padding: 10px;
+    background-color: #b8a98f; /* Light Brown */
+    width: 80%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 100%;
+    text-decoration: none;
+    color: #454545; /* Dark Grey */
+    opacity: 0.85;
+    padding: 10px 20px;
+    background-color: #f0ece7; /* Light Cream */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #736357; /* Earthy Brown */
+    color: #ffffff; /* White */
+}
+
+h2 {
+    font-size: 150%;
+    font-style: italic;
+    color: #736357; /* Earthy Brown */
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 75%;
+    opacity: 0.65;
+    margin: auto;
+    text-align: center;
+    color: #736357; /* Earthy Brown */
+    padding: 20px;
+}
+
+#container {
+    background-color: #ffffff; /* White */
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#content {
+    background-color: #ffffff; /* White */
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.blue {
+    color: #005493; /* Blue */
+}
+
+.green {
+    color: #009051; /* Green */
+}
+
+.red {
+    color: #941751; /* Red */
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+.ul_nobullet {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+hr {
+    opacity: 0.40;
+    margin: 3% 5%;
+}
+
+dt {
+    margin-top: 0.75%;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin-left: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #736357; /* Earthy Brown */
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    border-left: 5px solid #736357; /* Earthy Brown */
+}
+
+/* Additional styles */
+.blue-text {
+    color: #005493; /* Blue */
+}
+
+.green-text {
+    color: #009051; /* Green */
+}
+
+.light-cream-bg {
+    background-color: #f0ece7; /* Light Cream */
+}
+
+.light-grey-bg {
+    background-color: #f3f3f1; /* Light Grey */
+}
+
+.bold-font {
+    font-weight: bold;
+}
+
+.light-font {
+    font-weight: lighter;
+}
+
+.italic-font {
+    font-style: italic;
+}
+
+.oblique-font {
+    font-style: oblique;
+}
+
+.large-font {
+    font-size: 120%;
+}
+
+.small-font {
+    font-size: 80%;
+}
+
+.four-typefaces {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+.center-aligned {
+    text-align: center;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.strikethrough-text {
+    text-decoration: line-through;
+}
+
+.square-bullet {
+    list-style-type: square;
+}
+
+.roman-numerals {
+    list-style-type: upper-roman;
+}
+
+.div-container {
+}
+
+.span-inline {
+}
+
+/* Print-friendly styles */
+@media print {
+    nav, 
+    footer, 
+    header {
+        display: none;
+    }
+    
+    body {
+        background-color: #ffffff; /* White */
+        font-size: 110%;
+    }
+    
+    #content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    p, h1, h2 {
+        font-size: larger;
+    }
+}
